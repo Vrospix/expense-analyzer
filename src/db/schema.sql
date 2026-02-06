@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS expense (
+	id INT PRIMARY KEY,
+	date DATE NOT NULL,
+	amount FLOAT NOT NULL,
+	category TEXT NOT NULL,
+	note VARCHAR(256)
+)
