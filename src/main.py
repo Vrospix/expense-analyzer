@@ -3,6 +3,8 @@ from db.connection import get_connection
 from analysis.cleaning import clean_expenses
 from analysis.summary import category_summary
 from analysis.visualization import plot_category_summary
+from analysis.visualization import plot_monthly_trend
+from analysis.time_analysis import monthly_spending
 
 def main():
     conn = get_connection()
@@ -14,6 +16,8 @@ def main():
     summary = category_summary(clean_df)
     print(category_summary(clean_df))
     plot_category_summary(summary)
+    monthly = monthly_spending(clean_df)
+    plot_monthly_trend(monthly)
     conn.close()
 
 if __name__ == "__main__":
