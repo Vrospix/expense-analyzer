@@ -5,6 +5,7 @@ from analysis.summary import category_summary
 from analysis.visualization import plot_category_summary
 from analysis.visualization import plot_monthly_trend
 from analysis.time_analysis import monthly_spending
+from analysis.anomaly import detect_anomalies
 
 def main():
     conn = get_connection()
@@ -18,6 +19,9 @@ def main():
     plot_category_summary(summary)
     monthly = monthly_spending(clean_df)
     plot_monthly_trend(monthly)
+    anomalies = detect_anomalies(monthly)
+    print("Unusual spending months:")
+    print(anomalies)
     conn.close()
 
 if __name__ == "__main__":
