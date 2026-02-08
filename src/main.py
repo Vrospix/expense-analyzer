@@ -42,11 +42,8 @@ def predict():
     prediction, model = train_and_predict(ml_df)
 
 def run_pipeline():
-    conn = get_connection()
-    df = pd.read_sql("SELECT * FROM expense", conn)
-    conn.close()
 
-    clean_df = clean_expenses(df)
+    clean_df = main()
     monthly = monthly_spending(clean_df)
     anomalies = detect_anomalies(monthly)
 
@@ -61,4 +58,5 @@ def run_pipeline():
     }
 
 if __name__ == "__main__":
+    main()
     run_pipeline()
