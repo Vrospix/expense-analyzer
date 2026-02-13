@@ -75,14 +75,14 @@ streamlit run src/app.py
 
 ---
 
-Machine Learning
+## Machine Learning
 
 A linear regression model is used to forecast future monthly expenses based on historical spending trends.
 This serves as a baseline model and can be extended with more advanced time-series techniques.
 
 --- 
 
-Future Improvements
+## Future Improvements
 - Category-level forecasting
 - Budget threshold alerts
 - Advanced time-series models (ARIMA / LSTM)
@@ -90,7 +90,7 @@ Future Improvements
 
 ---
 
-Author
+## Author
 
 Built by [Vrospix]
 
