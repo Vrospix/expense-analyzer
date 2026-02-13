@@ -1,6 +1,6 @@
 # Expense Analyzer & Forecasting Dashboard
 
-## 📌 Overview
+## Overview
 Expense Analyzer is a data analytics project that processes personal expense data stored in a PostgreSQL database to uncover spending patterns, detect anomalies, and forecast future expenses.  
 The project combines SQL, Python data analysis, machine learning, and interactive visualization through a Streamlit dashboard.
 
@@ -8,7 +8,7 @@ This project was built to simulate a real-world data analytics pipeline rather t
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 Tracking expenses manually provides limited insight into spending behavior over time.  
 This project aims to:
 - Identify where money is being spent
@@ -17,7 +17,7 @@ This project aims to:
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 - **Python**
   - pandas
   - scikit-learn
@@ -29,12 +29,12 @@ This project aims to:
 
 ---
 
-## 🏗 Architecture
+## Architecture
 PostgreSQL → pandas (ETL) → Data Analysis → ML Forecasting → Streamlit Dashboard
 
 ---
 
-## ✨ Features
+## Features
 - Connects to PostgreSQL to retrieve expense data
 - Cleans and processes raw SQL data using pandas
 - Aggregates expenses by category and month
@@ -44,7 +44,7 @@ PostgreSQL → pandas (ETL) → Data Analysis → ML Forecasting → Streamlit D
 
 ---
 
-## 📊 Example Analyses
+## Example Analyses
 - Category-based spending breakdown
 - Monthly spending trend visualization
 - Anomaly detection for unusual months
@@ -52,7 +52,7 @@ PostgreSQL → pandas (ETL) → Data Analysis → ML Forecasting → Streamlit D
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 ```bash
@@ -75,14 +75,14 @@ streamlit run src/app.py
 
 ---
 
-📈 Machine Learning
+Machine Learning
 
 A linear regression model is used to forecast future monthly expenses based on historical spending trends.
 This serves as a baseline model and can be extended with more advanced time-series techniques.
 
 --- 
 
-📌 Future Improvements
+Future Improvements
 - Category-level forecasting
 - Budget threshold alerts
 - Advanced time-series models (ARIMA / LSTM)
@@ -90,13 +90,13 @@ This serves as a baseline model and can be extended with more advanced time-seri
 
 ---
 
-👤 Author
+Author
 
 Built by [Vrospix]
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Dashboard Overview
 ![Dashboard Overview](screenshots/dashboard.png)
